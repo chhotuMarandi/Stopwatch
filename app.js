@@ -1,9 +1,22 @@
-let num = 0;
+let second = 0;
+let miliSecond = 0;
 
-let seconds = document.getElementById("seconds");
+const seconds = document.getElementById("seconds");
+const miliSeconds = document.getElementById("mili-seconds");
 // console.log(seconds)
 
-setInterval(()=>{
-// seconds.innerHTML = num;
-num++;
-},1000)
+
+function secondTimer(){
+  setInterval(() => {
+    seconds.innerHTML = second;
+    second++;
+  }, 1000);
+}
+
+function miliSecondTimer (){
+  setInterval(() => {
+    miliSeconds.innerHTML = miliSecond;
+    miliSecond++;
+  }, 100);
+}
+
