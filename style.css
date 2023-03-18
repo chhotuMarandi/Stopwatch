@@ -1,0 +1,39 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.container{
+ background-color: red;
+ width: 50%;
+ height: 50vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.container button {
+ margin: 0 16px;
+ font-size: 1.5em;
+ padding: 5px 12px;
+}
+
+.container p {
+ font-size: 3em;
+ margin: 2em 0;
+ color: white;
+}
+
+.container h1 {
+ font-size: 4em;
+}
