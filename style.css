@@ -26,12 +26,14 @@ body {
  margin: 0 16px;
  font-size: 1.5em;
  padding: 5px 12px;
+ cursor: pointer;
 }
 
 .container p {
  font-size: 3em;
  margin: 2em 0;
  color: white;
+ 
 }
 
 .container h1 {
