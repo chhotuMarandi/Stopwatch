@@ -55,7 +55,7 @@ function timer (){
 
     stopwatch.innerHTML = min + " : " + sec + " : " + ms;
 
-    setTimeout('timer()',6.9)
+    setTimeout('timer()',6.85)
   }
 }
 
