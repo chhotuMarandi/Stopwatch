@@ -79,3 +79,15 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   /* letter-spacing: 5px; */
 }
+
+
+@media screen and (min-width: 414px) {
+  
+  body {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    width: fit-content;
+  }
+}
