@@ -1,28 +1,44 @@
 let isStop = true;
 
-const stopwatch = document.getElementById("stopwatch");
+const stopwatch = document.querySelector(".stopwatch");
 const startBtn = document.getElementById("start");
+const stopBtn = document.getElementById("stop");
 
 
 let ms = 0;
 let s = 0;
 let m = 0;
 
-const start = () => {
-  
+
+
+function startTimer () {
   if (isStop == true) {
-    isStop == false
-    ms++;
+    isStop = false
     timer();
   }
 };
 
-const timer = () => {
-  if(isStop == false) {
-    setInterval(()=>{
-      console.log(ms)
-    },1000)
-  }
-};
 
-startBtn.addEventListener('click', start);
+function timer (){
+  if(isStop == false) {
+    ms++;
+    setTimeout('timer()',1000)
+  }
+}
+
+const stopTimer = () => {
+  isStop == true;
+}
+
+
+// const timer = () => {
+//   if(isStop == false) {
+//     console.log("hi");
+//     ms++;
+//     timer.innerHTML = ms;
+//     setTimeout("timer()", 1000);
+//   }
+// }; 
+
+startBtn.addEventListener("click", startTimer);
+stopBtn.addEventListener("click", stopTimer);
