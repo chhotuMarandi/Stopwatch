@@ -1,7 +1,12 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
 }
 
 body {
@@ -28,11 +33,15 @@ body {
   font-size: 1.5em;
   padding: 5px 12px;
   cursor: pointer;
+  text-transform: uppercase;
+  
 }
 
 .container h2 {
   color: white;
-  font-size: 3em;
+  font-size: 2em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .container h1 {
@@ -44,4 +53,6 @@ body {
 .container h1 {
   font-size: 4em;
   color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* letter-spacing: 5px; */
 }
