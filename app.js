@@ -31,13 +31,13 @@ function timer (){
     
 
     if(ms == 100) {
-      ms = 0;
       sec++;
+      ms = 0;
     }
 
     if(sec == 60) {
-      sec = 0;
       min++;
+      sec = 0;
     }
 
     if(ms<10){
@@ -48,10 +48,14 @@ function timer (){
       sec = "0" + sec;
     }
 
+    if (min < 10) {
+      min = "0" + min;
+    }
+
 
     stopwatch.innerHTML = min + " : " + sec + " : " + ms;
 
-    setTimeout('timer()',10)
+    setTimeout('timer()',6.9)
   }
 }
 
@@ -60,7 +64,12 @@ const stopTimer = () => {
 }
 
 const resetTimer = () => {
-  stopwatch.innerHTML = 00;
+  isStop = true;
+  ms = 0;
+  sec = 0;
+  min = 0;
+  stopwatch.innerHTML = "00 : 00 : 00";
+
 }
 
 
